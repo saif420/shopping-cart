@@ -83,19 +83,19 @@
    plusButton.addEventListener("click",function(){
       const phoneValue = document.getElementById("phone-value").value;
       const phone = parseInt(phoneValue);
-      phoneValue =phone + 1;
+      document.getElementById("phone-value").value = phone + 1;
 
       const priceButton = document.getElementById("price-button").innerText;
       const price = parseInt(priceButton);
-      priceButton = price + 1200;
+      document.getElementById("price-button").innerText = price + 1219;
 
       const subTotal = document.getElementById("sub-total").innerText;
       const subPrice = parseInt(subTotal);
-      subTotal = subPrice + 1278;
+      document.getElementById("sub-total").innerText = subPrice + 1278;
 
       const taxTotal = document.getElementById("tax-total").innerText;
       const taxPrice = parseInt(taxTotal);
-      taxTotal = taxPrice + 5;
+      document.getElementById("tax-total").innerText = taxPrice + 5;
 
       const total = document.getElementById("total").innerText;
       const totalPrice = parseInt(total);
