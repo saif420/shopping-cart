@@ -99,7 +99,30 @@
 
       const total = document.getElementById("total").innerText;
       const totalPrice = parseInt(total);
-      
+      document.getElementById("total").innerText = totalPrice + 1281;
+      })
+      // minus button hanllder
+      const minsButton = document.getElementById("phone-minus-button");
+      minsButton.addEventListener("click",function(){
+      const phoneValue = document.getElementById("phone-value").value;
+      const phone = parseInt(phoneValue);
+      document.getElementById("phone-value").value = phone - 1;
+
+      const priceButton = document.getElementById("price-button").innerText;
+      const price = parseInt(priceButton);
+      document.getElementById("price-button").innerText = price - 1219;
+
+      const subTotal = document.getElementById("sub-total").innerText;
+      const subPrice = parseInt(subTotal);
+      document.getElementById("sub-total").innerText = subPrice - 1278;
+
+      const taxTotal = document.getElementById("tax-total").innerText;
+      const taxPrice = parseInt(taxTotal);
+      document.getElementById("tax-total").innerText = taxPrice - 5;
+
+      const total = document.getElementById("total").innerText;
+      const totalPrice = parseInt(total);
+      document.getElementById("total").innerText = totalPrice - 1281;
       })
   </script>
 </body>
