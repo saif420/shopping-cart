@@ -64,9 +64,9 @@
                      </div>
 
                      <div class="col-md-4 status">
-                        <h5><span id="sub-btn">$1,278</span></h5>
-                        <h5>$0</h5>
-                        <h5><span id="total-btn">$1,278</span></h5>
+                        <h5><span id="sub-total">$1,278</span></h5>
+                        <h5> <span id="tax-total">$5</span></h5>
+                        <h5><span id="total">$1,278</span></h5>
                      </div>
                   </div>
                </div>
@@ -83,18 +83,24 @@
    plusButton.addEventListener("click",function(){
       const phoneValue = document.getElementById("phone-value").value;
       const phone = parseInt(phoneValue);
-      const addPhone =  phone + 1 ;
-     phoneValue = phone;
-     document.getElementById("phone-value").value = phoneValue;
+      phoneValue =phone + 1;
 
-     const plusButton = document.getElementById("phone-plus-button");
-   plusButton.addEventListener("click",function(){
       const priceButton = document.getElementById("price-button").innerText;
       const price = parseInt(priceButton);
-      const newPrice =  price + 1200;
-      priceButton = price;
-      document.getElementById("price-button").innerText = priceButton;
-   })
+      priceButton = price + 1200;
+
+      const subTotal = document.getElementById("sub-total").innerText;
+      const subPrice = parseInt(subTotal);
+      subTotal = subPrice + 1278;
+
+      const taxTotal = document.getElementById("tax-total").innerText;
+      const taxPrice = parseInt(taxTotal);
+      taxTotal = taxPrice + 5;
+
+      const total = document.getElementById("total").innerText;
+      const totalPrice = parseInt(total);
+      
+      })
   </script>
 </body>
 </html>
